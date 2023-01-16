@@ -40,7 +40,7 @@
 	padding: 10px;
 }
 
-.aside-container__events-category .aside-container__events-time{
+.aside-container__events-category, .aside-container__events-time{
 	font-style: normal;
 	font-size: var(--small-fontsize);
 	line-height: 12px;
