@@ -1,1 +1,6 @@
-/* fonts.css */
+@font-face {
+	font-family: 'NeueHaas';
+	src: url(/assets/fonts/NeueHaas/NeueHaas.webloc);
+	font-weight: 600;
+	font-style: normal;
+}
