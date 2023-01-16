@@ -1,1 +1,16 @@
 /* variables.css */
+
+:root {
+	--primary-color: #000000; 
+	--sercondary-color: #ffffff;
+	--tertiary-color: #9747ff;
+	--quaternary-color: #e7e7e7;
+	--body-fonts: "times new roman";
+	--heading-fonts: "Neue Haas Grotesk Text Pro";
+
+	--Large-fontsize: 40px;
+	--body-fontsize: 20px;
+	--bodyUppercase-fontsize: 20px;
+	--small-fontsize: 10px;
+	--smallUppercase-fontsize: 10px;
+}
