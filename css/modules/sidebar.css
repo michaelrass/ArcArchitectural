@@ -50,12 +50,10 @@
 	line-height: 12px;
 	letter-spacing: 0.05em;
 	text-transform: uppercase;
-	color: var(--primary-color);
 }
 
 .aside-container__events-title{
 	font-size: var(--body-fontsize);
 	line-height: 23px;
 	font-weight: 400;
-	color: var(--primary-color);
 }
