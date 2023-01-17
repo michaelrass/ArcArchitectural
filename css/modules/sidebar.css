@@ -60,7 +60,8 @@
 	}
 
 	.aside-container__events-button:hover {
-
+		background: var(--sercondary-color);
+		color: var(--primary-color);
 	}
 }
 
@@ -71,7 +72,8 @@
 	}
 
 	.aside-container__events-button:hover {
-
+		background: var(--primary-color);
+		color: var(--sercondary-color);
 	}
 }
 
