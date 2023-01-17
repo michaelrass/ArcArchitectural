@@ -6,4 +6,5 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	font-family: 'Times New Roman', Times, serif;
+	height: 100vh;
 }
