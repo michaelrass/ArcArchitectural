@@ -9,6 +9,7 @@
 	font-size: 2rem;
 }
 
-.aside-container__navigation-list {
+.aside-container__navigation-list a {
 	text-decoration: none;
+	color: white;
 }
