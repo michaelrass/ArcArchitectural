@@ -11,5 +11,16 @@
 
 .aside-container__navigation-list a {
 	text-decoration: none;
-	color: white;
+}
+
+@media (prefers-color-scheme: light) {
+	.aside-container__navigation a {
+		color: var(--primary-color);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.aside-container__navigation a {
+		color: var(--secondary-color);
+	}
 }
