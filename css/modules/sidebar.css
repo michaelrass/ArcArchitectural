@@ -1,6 +1,11 @@
 .aside-container{
 	overflow: scroll;
 	overflow-x: hidden;
+	margin-right: 0.5rem;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 .aside-container__events{
@@ -37,6 +42,7 @@
 }
 
 .aside-container__events-list-item{
+	padding-bottom: 10px;
 	padding-top: 0.5rem;
 }
 
