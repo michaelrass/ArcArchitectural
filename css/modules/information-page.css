@@ -30,18 +30,18 @@
 
 .main-container__text-1 {
 	font-size: var(--body-fontsize);
-	line-height: 23px;
+	line-height: 1.15rem;
 }
 
 .main-container__text-2 {
 	font-size: var(--body-fontsize);
-	line-height: 23px;
+	line-height: 1.15rem;
 	text-indent: 3rem;
 }
 
 .main-container__text-3 {
 	font-size: var(--body-fontsize);
-	line-height: 23px;
+	line-height: 1.15rem;
 	text-indent: 3rem;
 }
 
