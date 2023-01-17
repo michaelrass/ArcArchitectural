@@ -1,8 +1,11 @@
 .aside-container{
 	overflow: scroll;
 	overflow-x: hidden;
-	margin-left: 0.5rem;
 	margin-right: 0.5rem;
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 .aside-container__events{
