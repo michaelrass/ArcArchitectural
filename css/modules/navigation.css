@@ -5,3 +5,10 @@
 	margin: 0px
 }
 
+.aside-container__navigation-list-item {
+	font-size: 2rem;
+}
+
+.aside-container__navigation-list {
+	text-decoration: none;
+}

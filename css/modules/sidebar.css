@@ -40,7 +40,8 @@
 }
 
 .aside-container__events-list-item{
-	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .aside-container__events-category, .aside-container__events-time{
