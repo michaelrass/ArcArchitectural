@@ -5,8 +5,21 @@
 }
 
 .aside-container__header-text {
-	border-top: 1px solid var(--primary-color);
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 	margin: 0px
+}
+
+@media (prefers-color-scheme: light) {
+	.aside-container__header-text {
+		border-top: 1px solid;
+		border-color: var(--primary-color);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.aside-container__header-text {
+		border-top: 1px solid;
+		border-color: var(--secondary-color);
+	}
 }
