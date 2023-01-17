@@ -2,12 +2,26 @@ html {
 	font-size: 20px;
 }
 
+@media (prefers-color-scheme: light) {
+	html {
+		background-color: var(--sercondary-color);
+	}	
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		background-color: var(--primary-color);
+	}
+}
+
 body {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
 	font-family: 'Times New Roman', Times, serif;
 	height: 100vh;
 	padding: 0.5rem;
+	max-width: 72rem;
+	margin: auto;
 }
 
 @media (prefers-color-scheme: dark) {
