@@ -4,8 +4,7 @@ https://arcarchitecturalgroup6.netlify.app/
 
 ---------------------------------------------------------------------------------------------------------
 
-Vi definerer MVP til å være en statisk nettside med sporadisk styling.
-Vi definerer IKKE hovereffects, sortering av events og div. ting som subscribe knapp til å være en del av MVP.
+Vi definerer MVP til å være en statisk nettside uten styling som viser informasjon om AA og artikler uten bilder.
 
 ----------------------------------------------------------------------------------------------------------
 
