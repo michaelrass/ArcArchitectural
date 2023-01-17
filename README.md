@@ -1,3 +1,8 @@
+Vi definerer MVP til å være en statisk nettside med sporadisk styling.
+Vi definerer IKKE hovereffects, sortering av events og div. ting som subscribe knapp til å være en del av MVP.
+
+----------------------------------------------------------------------------------------------------------
+
 Brief
 
 I denne oppgaven skal hver gruppe kartlegge og implementere en ferdig designet prototype og dokumentere prosessen fra start til slutt. Prototypen må behandles som ferdig produkt og skal derfor ikke redigeres. Hver gruppe må definere nettsidens *MVP.* Prosessen planlegges og gjennomføres med *Github Projects.* Nettsiden lanseres via *Netlify*. Jobb i grupper på 5.
