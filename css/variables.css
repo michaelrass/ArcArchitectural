@@ -1,5 +1,3 @@
-/* variables.css */
-
 :root {
 	--primary-color: #000000; 
 	--sercondary-color: #ffffff;
@@ -8,9 +6,9 @@
 	--body-fonts: "times new roman";
 	--heading-fonts: "Neue Haas Grotesk Text Pro";
 
-	--Large-fontsize: 40px;
-	--body-fontsize: 20px;
-	--bodyUppercase-fontsize: 20px;
-	--small-fontsize: 10px;
-	--smallUppercase-fontsize: 10px;
+	--Large-fontsize: 2rem;				/* 40px */
+	--body-fontsize: 1rem;				/* 20px */
+	--bodyUppercase-fontsize: 1rem;	/* 20px */
+	--small-fontsize: 0.5rem;				/* 10px */
+	--smallUppercase-fontsize: 0.5rem;	/* 10px */
 }

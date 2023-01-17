@@ -1,0 +1,4 @@
+.main-container {
+	overflow: scroll;
+	overflow-x: hidden;
+}
