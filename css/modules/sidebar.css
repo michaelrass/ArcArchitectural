@@ -28,7 +28,6 @@
 .aside-container__events-button{
 	box-sizing: border-box;
 	font-size: var(--small-fontsize);
-	border: 1px solid var(--primary-color);
 	border-radius: 50px;
 }
 
@@ -54,3 +53,25 @@
 	line-height: 23px;
 	font-weight: 400;
 }
+
+@media (prefers-color-scheme: dark) {
+	.aside-container__events-button {
+		border: 1px solid var(--sercondary-color);
+	}
+
+	.aside-container__events-button:hover {
+
+	}
+}
+
+@media (prefers-color-scheme: light) {
+
+	.aside-container__events-button {
+		border: 1px solid var(--primary-color);
+	}
+
+	.aside-container__events-button:hover {
+
+	}
+}
+
