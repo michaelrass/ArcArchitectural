@@ -1,0 +1,27 @@
+.main-container__front-page {
+	display: grid;
+	grid-template-columns: 5fr 4fr;
+	grid-gap: 0.5rem;
+}
+
+.main-container__image-1 {
+	width: 100%;
+	grid-column: 1 / span 2;
+}
+
+.main-container__image-2 {
+	width: 100%;
+	grid-column: 1;
+	grid-row: 2 / span 2;
+}
+
+.main-container__image-3 {
+	width: 100%;
+	grid-column: 2;
+}
+
+.main-container__image-4 {
+	width: 100%;
+	grid-column: 2;
+	grid-row-start: 3;
+}
