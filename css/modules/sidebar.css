@@ -1,6 +1,8 @@
 .aside-container{
 	overflow: scroll;
 	overflow-x: hidden;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 }
 
 .aside-container__events{
