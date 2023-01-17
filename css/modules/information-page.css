@@ -24,8 +24,29 @@
 	grid-column: 2 / span 3;
 }
 
-.main-container__text {
+.main-container__text-div {
 	grid-column-start: 2;
+}
+
+.main-container__text-1 {
 	font-size: var(--body-fontsize);
+	line-height: 23px;
+}
+
+.main-container__text-2 {
+	font-size: var(--body-fontsize);
+	line-height: 23px;
+	text-indent: 3rem;
+}
+
+.main-container__text-3 {
+	font-size: var(--body-fontsize);
+	line-height: 23px;
+	text-indent: 3rem;
+}
+
+.main-container__text-4 {
+	font-size: var(--body-fontsize);
+	text-indent: 3rem;
 	line-height: 1.15rem;
 }
