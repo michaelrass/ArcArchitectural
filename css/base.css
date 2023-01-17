@@ -8,3 +8,8 @@ body {
 	font-family: 'Times New Roman', Times, serif;
 	height: 100vh;
 }
+
+.aside-container {
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
+}
