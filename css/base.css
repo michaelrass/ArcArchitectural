@@ -8,3 +8,17 @@ body {
 	font-family: 'Times New Roman', Times, serif;
 	height: 100vh;
 }
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: var(--sercondary-color);
+		background: var(--primary-color);
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		color: var(--primary-color);
+		background: var(--sercondary-color);
+	}
+}
