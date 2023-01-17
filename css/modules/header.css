@@ -12,6 +12,14 @@
 
 @media (prefers-color-scheme: light) {
 	.aside-container__header-text {
-		border-top: 1px solid var(--primary-color);
+		border-top: 1px solid;
+		border-color: var(--primary-color);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	.aside-container__header-text {
+		border-top: 1px solid;
+		border-color: var(--secondary-color);
 	}
 }

@@ -1,7 +1,7 @@
 .aside-container__navigation {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
-	margin: 0px
+	margin: 0px;
 }
 
 .aside-container__navigation-list-item {
@@ -14,7 +14,9 @@
 
 @media (prefers-color-scheme: light) {
 	.aside-container__navigation {
-		border-top: 1px solid var(--primary-color);
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: var(--primary-color);
 	}
 
 	.aside-container__navigation a {
@@ -24,7 +26,9 @@
 
 @media (prefers-color-scheme: dark) {
 	.aside-container__navigation {
-		border-top: 1px solid var(--secondary-color);
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: var(--secondary-color);
 	}
 
 	.aside-container__navigation a {
