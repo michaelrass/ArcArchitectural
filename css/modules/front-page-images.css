@@ -26,6 +26,21 @@
 	grid-row-start: 3;
 }
 
+.main-container__image-5 {
+	width: 100%;
+	grid-column: 1 / span 6;
+}
+
+.main-container__image-6 {
+	width: 100%;
+	grid-column: 1 / span 4;
+}
+
+.main-container__image-7 {
+	width: 100%;
+	grid-column: 5 / span 2;
+}
+
 .main-container__ad {
 	background: var(--tertiary-color);
 	width: 100%;
