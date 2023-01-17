@@ -8,6 +8,23 @@
 	width: 100%;
 }
 
+.image__standard-image {
+	display: block;
+}
+
+.image__standard-image--inactive {
+	display: none;
+}
+
+.image__hover-image {
+	display: none;
+	width: 100%;
+}
+
+.image__hover-image--active {
+	display: block;
+}
+
 .main-container__image-1 {
 	grid-column: 1 / span 6;
 }
