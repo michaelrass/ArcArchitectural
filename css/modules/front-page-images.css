@@ -19,10 +19,6 @@
 	width: 2rem;
 }
 
-.main-container__events-mobile--inactive {
-	display: none;
-}
-
 .main-container__image-size {
 	width: 100%;
 }
