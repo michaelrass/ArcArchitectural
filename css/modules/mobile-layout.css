@@ -69,6 +69,7 @@
 
 .mobile-container__navigation-button {
 	position: absolute;
+	margin-bottom: 2rem;
 }
 
 .go-to-events-button {
@@ -77,6 +78,7 @@
 	left: 20%;
 	height: 2rem;
 	margin-top: 2rem;
+
 }
 
 .mobile-container__events-mobile{
