@@ -10,16 +10,23 @@
 	position: absolute;
 	bottom: 40px;
 	width: 72.5%;
-	height: 60px;
+	height: auto;
 	border: none;
 	border-radius: 10px;
 	font-family: helvetica;
 	font-weight: 900;
 	font-size: var(--Large-fontsize);
-	padding: 15px;
+	padding: 7.5px 1rem;
 	margin: 15px;
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
 	background-color: var(--quaternary-color);
 	color: var(--primary-color);
+}
+
+.main-container__subscribe-banner a {
+	text-decoration: none;
+	color: inherit;
 }
 
 .main-container__subscribe-banner-close {
@@ -45,31 +52,12 @@
 	transform: rotate(-45deg);
 }
 
-@media (prefers-color-scheme: dark) {
-	.main-container__subscribe-banner:hover {
-		color: white;
-		background-color: black;
-	}	
+.main-container__subscribe-banner:hover{
+	color: white;
+	background-color: black;
 }
 
-@media (prefers-color-scheme: light) {
-	.main-container__subscribe-banner {
-		color: white;
-		background-color: black;
-	}
-	
-	.main-container__subscribe-banner-close::after,
-	.main-container__subscribe-banner-close::before {
-		background-color: white;
-	}
-
-	.main-container__subscribe-banner:hover{
-		color: var(--primary-color);
-		background-color: var(--quaternary-color);
-	}
-
-	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
-	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
-		background-color: black;
-	}
+.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
+.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
+	background-color: white;
 }
