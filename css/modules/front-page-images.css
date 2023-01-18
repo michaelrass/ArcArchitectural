@@ -80,3 +80,54 @@
 	padding-bottom: 75%;
 	background: var(--tertiary-color);
 }
+
+@media screen and (max-width: 28.8rem) {
+	.main-container__front-page {
+		display: block;
+		
+	}
+
+	.main-container__image-1 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-2 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-3 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-4 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-5 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-6 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__image-7 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__ad-outer-1 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__ad-outer-2 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__ad-outer-3 {
+		margin-bottom: 0.5rem;
+	}
+	
+	.main-container__ad-outer-4 {
+		margin-bottom: 0.5rem;
+	}
+}

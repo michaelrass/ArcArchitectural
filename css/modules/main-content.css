@@ -2,3 +2,9 @@
 	overflow: scroll;
 	overflow-x: hidden;
 }
+
+@media screen and (max-width: 28.8rem) {
+	.aside-container{
+		display: none;
+	}
+}
