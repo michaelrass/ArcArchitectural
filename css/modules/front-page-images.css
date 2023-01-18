@@ -4,6 +4,25 @@
 	grid-gap: 0.5rem;
 }
 
+.main-container__events-mobile{
+	display: none;
+	overflow: scroll;
+	height: 75vh;
+	background-color: black;
+	
+}
+
+.close-button{
+	position: absolute;
+	right: 1rem;
+	top: 0.5rem;
+	width: 2rem;
+}
+
+.main-container__events-mobile--inactive {
+	display: none;
+}
+
 .main-container__image-size {
 	width: 100%;
 }
@@ -85,6 +104,11 @@
 	.main-container__front-page {
 		display: block;
 		
+	}
+
+	.main-container__events-mobile{
+		display: block;
+		position: absolute;
 	}
 
 	.main-container__image-1 {
