@@ -41,5 +41,7 @@ body {
 @media screen and (max-width: 28.8rem) {
 	body {
 		grid-template-columns: none;
+
+
 	}
 }
