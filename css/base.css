@@ -4,7 +4,7 @@ html {
 
 @media (prefers-color-scheme: light) {
 	html {
-		background-color: var(--sercondary-color);
+		background-color: var(--secondary-color);
 	}	
 }
 
@@ -26,7 +26,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		color: var(--sercondary-color);
+		color: var(--secondary-color);
 		background: var(--primary-color);
 	}
 }
@@ -34,6 +34,6 @@ body {
 @media (prefers-color-scheme: light) {
 	body {
 		color: var(--primary-color);
-		background: var(--sercondary-color);
+		background: var(--secondary-color);
 	}
 }

@@ -62,11 +62,11 @@
 
 @media (prefers-color-scheme: dark) {
 	.aside-container__events-button {
-		border: 0.05rem solid var(--sercondary-color);
+		border: 0.05rem solid var(--secondary-color);
 	}
 
 	.aside-container__events-button:hover {
-		background: var(--sercondary-color);
+		background: var(--secondary-color);
 		color: var(--primary-color);
 	}
 }
@@ -79,7 +79,7 @@
 
 	.aside-container__events-button:hover {
 		background: var(--primary-color);
-		color: var(--sercondary-color);
+		color: var(--secondary-color);
 	}
 }
 
