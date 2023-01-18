@@ -16,6 +16,22 @@ export default function Logo() {
 	}
 
 	function handleLogoPurpleMouseout() {
-		
+		hoverOff();
+	}
+
+	function lightModeHoverOn() {
+		logoBlack.classList.add('header__logo--hidden');
+		logoPurple.classList.add('header__logo--visible');
+	}
+
+	function darkModeHoverOn() {
+		logoWhite.classList.add('header__logo--hidden');
+		logoPurple.classList.add('header__logo--visible');
+	}
+	
+	function hoverOff() {
+		logoBlack.classList.remove('header__logo--hidden');
+		logoWhite.classList.remove('header__logo--hidden');
+		logoPurple.classList.remove('header__logo--visible');
 	}
 }
