@@ -5,7 +5,6 @@ export default function Hover(){
 	standardImage.forEach(element => {
 		element.addEventListener('mouseenter', handleMouseEnter)
 	})
-	
 	hoverImage.forEach(element => {
 		element.addEventListener('mouseleave', handleMouseLeave)
 	})
