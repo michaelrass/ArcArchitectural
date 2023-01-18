@@ -1,7 +1,11 @@
 import Logo from './modules/Logo.js'
 import Hover from './modules/Hover.js'
+import Rederect from './modules/rederect.js';
+import controlSubMenuMobile from './modules/Control-submenus-mobile.js';
 import subscribeButton from './modules/SubscribeButton.js'
 
-Logo();
 Hover();
+Rederect();
+controlSubMenuMobile();
 subscribeButton();
+Logo();
