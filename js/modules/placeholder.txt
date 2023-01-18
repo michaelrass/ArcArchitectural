@@ -1,4 +1,0 @@
-placeholder text file to set up folder structure
-
-
--- Delete this file when /css/modules/has content.
