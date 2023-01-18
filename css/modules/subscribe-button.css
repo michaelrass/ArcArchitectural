@@ -1,0 +1,75 @@
+.main-container__subscribe-form {
+	display: flex;
+	justify-content: center;
+}
+
+.main-container__subscribe-banner {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 40px;
+	width: 72.5%;
+	height: 60px;
+	border: none;
+	border-radius: 10px;
+	font-family: helvetica;
+	font-weight: 900;
+	font-size: var(--Large-fontsize);
+	padding: 15px;
+	margin: 15px;
+	background-color: var(--quaternary-color);
+	color: var(--primary-color);
+}
+
+.main-container__subscribe-banner-close {
+	position: relative;
+	width: 50px;
+	height: 50px;
+	border: none;
+}
+
+.main-container__subscribe-banner-close::before, .main-container__subscribe-banner-close::after {
+	content: "";
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	background-color: black;
+}
+
+.main-container__subscribe-banner-close::before {
+	transform: rotate(45deg);
+}
+
+.main-container__subscribe-banner-close::after {
+	transform: rotate(-45deg);
+}
+
+@media (prefers-color-scheme: dark) {
+	.main-container__subscribe-banner:hover {
+		color: white;
+		background-color: black;
+	}	
+}
+
+@media (prefers-color-scheme: light) {
+	.main-container__subscribe-banner {
+		color: white;
+		background-color: black;
+	}
+	
+	.main-container__subscribe-banner-close::after,
+	.main-container__subscribe-banner-close::before {
+		background-color: white;
+	}
+
+	.main-container__subscribe-banner:hover{
+		color: var(--primary-color);
+		background-color: var(--quaternary-color);
+	}
+
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
+		background-color: black;
+	}
+}
