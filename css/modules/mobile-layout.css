@@ -2,8 +2,56 @@
 	display: none;
 }
 
+.mobile-container__navigation {
+	position: absolute;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	margin: 0px;
+	width: 100%;
+	height: 50vh;
+	overflow: scroll;
+}
+
+.mobile-container__navigation-list-item {
+	font-size: 2rem;
+}
+
+.mobile-container__navigation-list a {
+	text-decoration: none;
+	position: relative;
+}
+
+.mobile-container__navigation-list a::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	transform-origin: bottom left;
+	transition: transform 0.2s ease-out;
+}
+
+.mobile-container__navigation-list a:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.mobile-container__navigation-button {
+	position: absolute;
+}
+
+.go-to-events-button {
+	position: absolute;
+	width: 50%;
+	left: 20%;
+	height: 2rem;
+	margin-top: 2rem;
+}
+
 .mobile-container__events-mobile{
-	display: block;
+	display: none;
 	position: absolute;
 	overflow: scroll;
 	height: 75vh;
@@ -38,7 +86,7 @@
 	margin-top: 1rem;
 }
 
-.mobile-container__events-button{
+.mobile-container__button{
 	box-sizing: border-box;
 	font-size: var(--small-fontsize);
 	border-radius: 2.5rem;
@@ -84,7 +132,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-	.mobile-container__events-button {
+	.mobile-container__button {
 		border: 0.05rem solid var(--secondary-color);
 	}
 
@@ -96,11 +144,26 @@
 	.mobile-container__events-mobile {
 		background: var(--primary-color);
 	}
+
+	.mobile-container__navigation {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: var(--secondary-color);
+		background: var(--primary-color);
+	}
+	
+	.mobile-container__navigation a {
+		color: var(--secondary-color);
+	}
+
+	.mobile-container__navigation-list a::after {
+		background-color: var(--secondary-color);
+	}
 }
 
 @media (prefers-color-scheme: light) {
 
-	.mobile-container__events-button {
+	.mobile-container__button {
 		border: 0.05rem solid var(--primary-color);
 	}
 
@@ -111,6 +174,21 @@
 
 	.mobile-container__events-mobile {
 		background: var(--secondary-color);
+	}
+
+	.mobile-container__navigation {
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: var(--primary-color);
+	}
+
+	.mobile-container__navigation a {
+		color: var(--primary-color);
+		background: var(--secondary-color);
+	}
+	
+	.mobile-container__navigation-list a::after {
+		background-color: var(--primary-color);
 	}
 }
 
