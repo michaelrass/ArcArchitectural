@@ -2,12 +2,15 @@ export default function Hover(){
 	const standardImage = document.querySelectorAll('.image__standard-image');
 	const hoverImage = document.querySelectorAll('.image__hover-image');
 	
-	standardImage.forEach(element => {
-		element.addEventListener('mouseenter', handleMouseEnter)
-	})
-	hoverImage.forEach(element => {
-		element.addEventListener('mouseleave', handleMouseLeave)
-	})
+	if(window.innerWidth > 576){
+		standardImage.forEach(element => {
+			element.addEventListener('mouseenter', handleMouseEnter)
+		})
+		hoverImage.forEach(element => {
+			element.addEventListener('mouseleave', handleMouseLeave)
+		})
+	}
+	
 	
 	function handleMouseEnter(event){
 		hideCurrentImage(event);
