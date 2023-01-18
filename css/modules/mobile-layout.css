@@ -2,7 +2,36 @@
 	display: none;
 }
 
+.mobile-container__header{
+	position: sticky;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background: var(--secondary-color);
+	color: var(--primary-color);
+	display: grid;
+	grid-template-columns: 9fr 1fr 1fr;
+	grid-column-gap: 0.5rem;
+	padding: 0.5rem;
+}
+
+.mobile-container__header-title {
+	grid-column: 1;
+	font-size: var(--mobile-large);
+}
+
+.mobile-container__header-search-button{
+	border: none;
+	grid-column: 2;
+}
+
+.mobile-container__header-menu-button {
+	border: none;
+	grid-column: 3;
+}
+
 .mobile-container__navigation {
+	display: none;
 	position: absolute;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
