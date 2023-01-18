@@ -51,7 +51,7 @@
 	.aside-container__navigation {
 		border-top: 1px solid;
 		border-bottom: 1px solid;
-		border-color: var(--sercondary-color);
+		border-color: var(--secondary-color);
 	}
 	
 	.aside-container__navigation a {
@@ -59,6 +59,6 @@
 	}
 
 	.aside-container__navigation-list a::after {
-		background-color: var(--sercondary-color);
+		background-color: var(--secondary-color);
 	}
 }
