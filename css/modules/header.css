@@ -27,3 +27,11 @@
 .header__logo-container {
 	width: 100%;
 }
+
+.aside-img_black {
+	width: 100%;
+}
+.aside-img_purple {
+	width: 100%;
+	display: none;
+}
