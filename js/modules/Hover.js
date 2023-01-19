@@ -1,4 +1,20 @@
 export default function Hover(){
+	
+		const handleImgBlackHover = document.querySelector('.aside-img_black');
+		
+		handleImgBlackHover.addEventListener("mouseover", BlackHover);
+		handleImgBlackHover.addEventListener("mouseleave", PurpleHover);
+	
+		function BlackHover () {
+			//alert('test1');
+			handleImgBlackHover.src = "/assets/images/logo/logoPurple.svg"
+		}
+		function PurpleHover (){
+			//alert('test');
+			handleImgBlackHover.src = "/assets/images/logo/logoBlack.svg"
+		}
+	
+
 	const standardImage = document.querySelectorAll('.image__standard-image');
 	const hoverImage = document.querySelectorAll('.image__hover-image');
 	
