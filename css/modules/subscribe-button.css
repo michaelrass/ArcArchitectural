@@ -52,18 +52,20 @@
 	transform: rotate(-45deg);
 }
 
-.main-container__subscribe-banner:hover{
-	color: white;
-	background-color: black;
-}
-
-.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
-.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
-	background-color: white;
+/* Hover effect only on desktop */
+@media screen and (min-width: 1024px) {
+	.main-container__subscribe-banner:hover{
+		color: white;
+		background-color: black;
+	}
+	
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
+		background-color: white;
+	}
 }
 
 /* responsivity for mobile screens */
-
 @media screen and (max-width: 1024px) {
 	.main-container__subscribe-banner span {
 		display: none;
