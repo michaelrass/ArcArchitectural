@@ -7,25 +7,24 @@ export default function Hover(){
 	
 	if(window.innerWidth > 576){
 		standardImage.forEach(element => {
-			element.addEventListener('mouseenter', handleMouseEnter)
+			element.addEventListener('mouseover', handleMouseEnter)
 		})
 		hoverImage.forEach(element => {
-			element.addEventListener('mouseleave', handleMouseLeave)
+			element.addEventListener('mouseout', handleMouseLeave)
 		})
+		logoBlack.addEventListener('mouseover', handleLogoBlackMouseover);
+		logoWhite.addEventListener('mouseover', handleLogoWhiteMouseover);
+		logoPurple.addEventListener('mouseout', handleLogoPurpleMouseout);
 	}
 	
-	logoBlack.addEventListener('mouseover', handleLogoBlackMouseover);
-	logoWhite.addEventListener('mouseover', handleLogoWhiteMouseover);
-	logoPurple.addEventListener('mouseout', handleLogoPurpleMouseout);
+
 	
 	function handleMouseEnter(event){
-		hideCurrentImage(event);
-		displayHoverImage(event);
+		imageHoverOn(event);
 	}
 	
 	function handleMouseLeave(event){
-		hideHoverImage(event);
-		displayStandardImage(event);
+		imageHoverOff(event);
 	}
 	
 	function handleLogoBlackMouseover() {
@@ -40,24 +39,19 @@ export default function Hover(){
 		logoHoverOff();
 	}
 
-	function hideCurrentImage(event){
-		let currentTarget = event.currentTarget.dataset.index
-		standardImage[currentTarget].classList.add('image__standard-image--inactive')
+	function imageHoverOn(event) {
+		let currentTarget = event.currentTarget.dataset.index;
+		let imageHeigth = getComputedStyle(event.currentTarget);
+		hoverImage[currentTarget].style.height = imageHeigth.height
+		standardImage[currentTarget].classList.add('image__standard-image--inactive');
+		hoverImage[currentTarget].classList.add('image__hover-image--active');
 	}
-	
-	function displayHoverImage(event){
-		let currentTarget = event.currentTarget.dataset.index
-		hoverImage[currentTarget].classList.add('image__hover-image--active')
-	}
-	
-	function hideHoverImage(event) {
-		let currentTarget = event.currentTarget.dataset.index
-		hoverImage[currentTarget].classList.remove('image__hover-image--active')
-	}
-	
-	function displayStandardImage(event) {
-		let currentTarget = event.currentTarget.dataset.index
-		standardImage[currentTarget].classList.remove('image__standard-image--inactive')
+
+	function imageHoverOff(event) {
+		let currentTarget = event.currentTarget.dataset.index;
+		standardImage[currentTarget].classList.remove('image__standard-image--inactive');
+		hoverImage[currentTarget].classList.remove('image__hover-image--active');
+
 	}
 	
 	function lightModeLogoHoverOn() {

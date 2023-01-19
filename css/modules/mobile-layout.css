@@ -211,6 +211,7 @@
 		border-top: 1px solid;
 		border-bottom: 1px solid;
 		border-color: var(--primary-color);
+		background: var(--secondary-color);
 	}
 
 	.mobile-container__navigation a {
