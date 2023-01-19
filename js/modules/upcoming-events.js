@@ -26,6 +26,7 @@ export default function upcomingEvents(){
 	}
 
 	function handleSortEventsMobileButtonClick(event) {
+		getEventItemsMobile()
 		sortEventsMobile(event)
 	}
 
@@ -48,11 +49,29 @@ export default function upcomingEvents(){
 	}
 
 	function sortEventsMobile(event) {
-
+		let clickedTargetCategory = event.currentTarget.dataset.category
+		if(clickedTargetCategory === sorted) {
+			eventListItems.forEach(item => {
+				item.classList.remove('mobile-container__events--hidden');
+			})
+		}else {
+			eventListItems.forEach(item => {
+				item.classList.add('mobile-container__events--hidden')
+				if(clickedTargetCategory === item.dataset.category){
+					item.classList.remove('mobile-container__events--hidden');
+					sorted = clickedTargetCategory;
+				}
+				
+			})
+		}
 	}
 
 	function getEventItemsDesktop() {
 		eventListItems = document.querySelectorAll('.aside-container__events-list-item')
+	}
+
+	function getEventItemsMobile() {
+		eventListItems = document.querySelectorAll('.mobile-container__events-list-item')
 	}
 
 	function render() {
@@ -101,6 +120,7 @@ export default function upcomingEvents(){
 		itemTitle.setAttribute('class', 'mobile-container__events-title');
 		itemDate.setAttribute('class', 'mobile-container__events-time');
 		itemCategory.setAttribute('class', 'mobile-container__events-category')
+		listItem.setAttribute('data-category', item.category)
 
 		itemTitle.innerText = item.title;
 		itemDate.innerText = item.date;
