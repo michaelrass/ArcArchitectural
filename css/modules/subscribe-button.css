@@ -1,27 +1,30 @@
-.main-container__subscribe-form {
-	display: flex;
-	justify-content: center;
+.main-container__subscribe {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+	bottom: 50px;
 }
 
 .main-container__subscribe-banner {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-between;;
 	align-items: center;
-	position: absolute;
-	bottom: 40px;
-	width: 72.5%;
+	font-family: helvetica, sans-serif;
+	font-weight: 900;
+	font-size: var(--large-font-size);
+	max-width: 56rem;
 	height: auto;
+	padding: 7.5px 1rem;
 	border: none;
 	border-radius: 10px;
-	font-family: helvetica;
-	font-weight: 900;
-	font-size: 3vw;
-	padding: 7.5px 1rem;
-	margin: 15px;
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out;
 	background-color: var(--quaternary-color);
 	color: var(--primary-color);
+}
+
+.main-container__subscribe-text {
+	width: 100%;
 }
 
 .main-container__subscribe-banner a {
@@ -31,8 +34,9 @@
 
 .main-container__subscribe-banner-close {
 	position: relative;
-	width: 50px;
-	height: 50px;
+	padding-right: 30px;
+	width: 40px;
+	height: 40px;
 	border: none;
 }
 
@@ -52,26 +56,28 @@
 	transform: rotate(-45deg);
 }
 
-.main-container__subscribe-banner:hover{
-	color: white;
-	background-color: black;
-}
-
-.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
-.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
-	background-color: white;
+/* Hover effect only on desktop */
+@media screen and (min-width: 1024px) {
+	.main-container__subscribe-banner:hover{
+		color: white;
+		background-color: black;
+	}
+	
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
+	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
+		background-color: white;
+	}
 }
 
 /* responsivity for mobile screens */
-
 @media screen and (max-width: 1024px) {
 	.main-container__subscribe-banner span {
 		display: none;
 	}
-
+	
 	.main-container__subscribe-banner {
-		font-size: 5vw;
-		width: 70%;
+		font-size: var(--large-font-size);
+		width: 95%;
 	}
 }
 
@@ -79,9 +85,9 @@
 	.main-container__subscribe-banner span {
 		display: none;
 	}
-
+	
 	.main-container__subscribe-banner {
-		font-size: 5vw;
-		width: 70%;
+		font-size: var(--large-font-size);
+		width: 95%;
 	}
 }
