@@ -2,17 +2,17 @@ const events = [
 	{
 		title: 'Conversation: Sami Sami sacred mountains and sacrificial stones',
 		date: 'January 20 12:00-14:00',
-		category: 'LECTURES'
+		category: 'lectures'
 	},
 	{
 		title: 'Free guided tour in Kunna Guanna Concha',
 		date: 'february 5 16:00-17:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Exhibition opening: Metahaven and Susanne M. Winterling',
 		date: 'february 12 18:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Monumental love - Art historian Marit Paasche on Hannah Ryggen',
@@ -22,17 +22,17 @@ const events = [
 	{
 		title: 'Conversation: Sami Sami sacred mountains and sacrificial stones',
 		date: 'January 20 12:00-14:00',
-		category: 'LECTURES'
+		category: 'lectures'
 	},
 	{
 		title: 'Free guided tour in Kunna Guanna Concha',
 		date: 'february 5 16:00-17:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Exhibition opening: Metahaven and Susanne M. Winterling',
 		date: 'february 12 18:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Monumental love - Art historian Marit Paasche on Hannah Ryggen',
@@ -42,17 +42,17 @@ const events = [
 	{
 		title: 'Conversation: Sami Sami sacred mountains and sacrificial stones',
 		date: 'January 20 12:00-14:00',
-		category: 'LECTURES'
+		category: 'lectures'
 	},
 	{
 		title: 'Free guided tour in Kunna Guanna Concha',
 		date: 'february 5 16:00-17:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Exhibition opening: Metahaven and Susanne M. Winterling',
 		date: 'february 12 18:00',
-		category: 'Exhibitions'
+		category: 'exhibitions'
 	},
 	{
 		title: 'Monumental love - Art historian Marit Paasche on Hannah Ryggen',

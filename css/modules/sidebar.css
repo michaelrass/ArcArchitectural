@@ -60,6 +60,10 @@
 	font-weight: 400;
 }
 
+.aside-container__events--hidden {
+	display: none;
+}
+
 @media (prefers-color-scheme: dark) {
 	.aside-container__events-button {
 		border: 0.05rem solid var(--secondary-color);

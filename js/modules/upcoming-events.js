@@ -1,6 +1,9 @@
 import { events } from "./events-array.js";
 
 export default function upcomingEvents(){
+	let eventListItems
+	let sorted
+	
 	const eventsContainerDesktop = document.querySelector('.aside-container__events-list');
 	const eventsContainerMobile = document.querySelector('.mobile-container__events-list');
 
@@ -8,6 +11,49 @@ export default function upcomingEvents(){
 	const sortEventsButtonsMobile = document.querySelectorAll('.mobile-container__button');
 
 	render();
+
+	sortEventsButtonsDesktop.forEach(element => {
+		element.addEventListener('click', handleSortEventsDesktopButtonClick)
+	})
+
+	sortEventsButtonsMobile.forEach(element => {
+		element.addEventListener('click', handleSortEventsMobileButtonClick)
+	})
+
+	function handleSortEventsDesktopButtonClick(event) {
+		getEventItemsDesktop()
+		sortEventsDesktop(event);
+	}
+
+	function handleSortEventsMobileButtonClick(event) {
+		sortEventsMobile(event)
+	}
+
+	function sortEventsDesktop(event) {
+		let clickedTargetCategory = event.currentTarget.dataset.category
+		if(clickedTargetCategory === sorted) {
+			eventListItems.forEach(item => {
+				item.classList.remove('aside-container__events--hidden');
+			})
+		}else {
+			eventListItems.forEach(item => {
+				item.classList.add('aside-container__events--hidden')
+				if(clickedTargetCategory === item.dataset.category){
+					item.classList.remove('aside-container__events--hidden');
+					sorted = clickedTargetCategory;
+				}
+				
+			})
+		}
+	}
+
+	function sortEventsMobile(event) {
+
+	}
+
+	function getEventItemsDesktop() {
+		eventListItems = document.querySelectorAll('.aside-container__events-list-item')
+	}
 
 	function render() {
 		events.forEach(item => {
@@ -34,6 +80,7 @@ export default function upcomingEvents(){
 		itemTitle.setAttribute('class', 'aside-container__events-title');
 		itemDate.setAttribute('class', 'aside-container__events-time');
 		itemCategory.setAttribute('class', 'aside-container__events-category')
+		listItem.setAttribute('data-category', item.category)
 
 		itemTitle.innerText = item.title;
 		itemDate.innerText = item.date;
