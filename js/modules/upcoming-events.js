@@ -36,6 +36,7 @@ export default function upcomingEvents(){
 			eventListItems.forEach(item => {
 				item.classList.remove('aside-container__events--hidden');
 			})
+			sorted = ''
 		}else {
 			eventListItems.forEach(item => {
 				item.classList.add('aside-container__events--hidden')
@@ -54,6 +55,7 @@ export default function upcomingEvents(){
 			eventListItems.forEach(item => {
 				item.classList.remove('mobile-container__events--hidden');
 			})
+			sorted = ''
 		}else {
 			eventListItems.forEach(item => {
 				item.classList.add('mobile-container__events--hidden')
