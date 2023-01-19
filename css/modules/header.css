@@ -1,3 +1,7 @@
 .aside-img_false {
 	width: 100%;
 }
+.aside-img_true {
+	width: 100%;
+	display: none;
+}
