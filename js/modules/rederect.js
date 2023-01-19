@@ -3,6 +3,9 @@ export default function Rederect() {
 	const clickableImages = document.querySelectorAll('.main-container__image-link');
 	const clickableImagesMobile = document.querySelectorAll('.mobile-container__images');
 
+	const clickableTitles = dociment.querySelectorAll('.mobile-container__header-title'):
+	const	clickableImagesMobile = document.querySelectorAll('.mobile-')
+
 	clickableImages.forEach(element => {
 		element.addEventListener('click', handleImageClick);
 	})
