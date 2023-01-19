@@ -25,6 +25,9 @@ export default function Hover(){
 		hoverImage.forEach(element => {
 			element.addEventListener('mouseout', handleMouseLeave)
 		})
+		logoBlack.addEventListener('mouseover', handleLogoBlackMouseover);
+		logoWhite.addEventListener('mouseover', handleLogoWhiteMouseover);
+		logoPurple.addEventListener('mouseout', handleLogoPurpleMouseout);
 	}
 	
 
@@ -36,6 +39,18 @@ export default function Hover(){
 	function handleMouseLeave(event){
 		imageHoverOff(event);
 	}
+	
+	function handleLogoBlackMouseover() {
+		lightModeLogoHoverOn();
+	}
+	
+	function handleLogoWhiteMouseover() {
+		darkModeLogoHoverOn();
+	}
+	
+	function handleLogoPurpleMouseout() {
+		logoHoverOff();
+	}
 
 	function imageHoverOn(event) {
 		let currentTarget = event.currentTarget.dataset.index;
@@ -43,6 +58,20 @@ export default function Hover(){
 		hoverImage[currentTarget].style.height = imageHeigth.height
 		standardImage[currentTarget].classList.add('image__standard-image--inactive');
 		hoverImage[currentTarget].classList.add('image__hover-image--active');
+
+	}
+
+	function imageHoverOff(event) {
+		let currentTarget = event.currentTarget.dataset.index;
+		standardImage[currentTarget].classList.remove('image__standard-image--inactive');
+		hoverImage[currentTarget].classList.remove('image__hover-image--active');
+
+	}
+	
+	function lightModeLogoHoverOn() {
+		logoBlack.classList.add('header__logo--hidden');
+		logoPurple.classList.add('header__logo--visible');
+
 	}
 
 	function imageHoverOff(event) {
