@@ -10,7 +10,7 @@ export default function Hover(){
 			element.addEventListener('mouseover', handleMouseEnter)
 		})
 		hoverImage.forEach(element => {
-			element.addEventListener('mouseleave', handleMouseLeave)
+			element.addEventListener('mouseout', handleMouseLeave)
 		})
 		logoBlack.addEventListener('mouseover', handleLogoBlackMouseover);
 		logoWhite.addEventListener('mouseover', handleLogoWhiteMouseover);
