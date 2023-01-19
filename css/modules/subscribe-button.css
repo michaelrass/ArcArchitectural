@@ -15,7 +15,7 @@
 	border-radius: 10px;
 	font-family: helvetica;
 	font-weight: 900;
-	font-size: var(--Large-fontsize);
+	font-size: 3vw;
 	padding: 7.5px 1rem;
 	margin: 15px;
 	opacity: 1;
@@ -60,4 +60,28 @@
 .main-container__subscribe-banner:hover .main-container__subscribe-banner-close::before,
 .main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
 	background-color: white;
+}
+
+/* responsivity for mobile screens */
+
+@media screen and (max-width: 1024px) {
+	.main-container__subscribe-banner span {
+		display: none;
+	}
+
+	.main-container__subscribe-banner {
+		font-size: 5vw;
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.main-container__subscribe-banner span {
+		display: none;
+	}
+
+	.main-container__subscribe-banner {
+		font-size: 5vw;
+		width: 70%;
+	}
 }
