@@ -28,29 +28,10 @@
 	width: 100%;
 }
 
-.header__logo-black,
-.header__logo-white,
-.header__logo-purple {
+.aside-img_black {
+	width: 100%;
+}
+.aside-img_purple {
 	width: 100%;
 	display: none;
-}
-
-@media (prefers-color-scheme: light) {
-	.header__logo-black {
-		display: block;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	.header__logo-white {
-		display: block;
-	}
-}
-
-.header__logo--hidden {
-	display: none;
-}
-
-.header__logo--visible {
-	display: block;
 }

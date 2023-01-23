@@ -12,10 +12,15 @@
 
 		<aside class="aside-container">
 			<header class="aside-container__header">
-				<a class="header__logo-container" href="/index.html">
-					<img class="header__logo-black" src="/assets/images/logo/logoBlack.svg" alt="go to homepage">
-					<img class="header__logo-white" src="/assets/images/logo/LogoWhite.svg" alt="go to homepage">
-					<img class="header__logo-purple" src="/assets/images/logo/logoPurple.svg" alt="go to homepage">
+				<a href="/index.html">
+					<img id="asideImgBlack" class="aside-img_black" 
+					src="/assets/images/logo/logoBlack.svg" 
+					alt="">
+				</a>
+				<a href="/index.html">
+					<img id="asideImgPurple" class="aside-img_purple" 
+					src="/assets/images/logo/logoPurple.svg" 
+					alt="">
 				</a>
 				<h1 class="aside-container__header-logo">Arc Architectural</h1><br>
 				<p class="aside-container__header-text">AA was founded in 1847 with the aspiration of ‘promoting and affording facilities for the study of architecture for the public benefit’. Likeness it them very firmament without created also bring a one Whose she'd in. Sea unto created every together together. For that wherein. Kind sea earth them was place. Sixth signs saying after replenish multiply. Female every unto beginning appear moving tree the bearing own.</p>
@@ -32,71 +37,12 @@
 			<div class="aside-container__events">
 				<p class="aside-container__events-header">Upcoming Events</p>
 				<div class="aside-container__events-buttondiv">
-					<button class="aside-container__events-button">LECTURES</button>
-					<button class="aside-container__events-button">EXHIBITIONS</button>
-					<button class="aside-container__events-button">OPEN SEMINARS</button>
+					<button class="aside-container__events-button" data-category="lectures">LECTURES</button>
+					<button class="aside-container__events-button" data-category="exhibitions">EXHIBITIONS</button>
+					<button class="aside-container__events-button" data-category="open seminars">OPEN SEMINARS</button>
 				</div>
 				<ul class="aside-container__events-list">
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">LECTURES</p>
-						<p class="aside-container__events-time">January 20 12:00-14:00</p>
-						<p class="aside-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 5 16:00-17:00</p>
-						<p class="aside-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 12 18:00</p>
-						<p class="aside-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">open seminars</p>
-						<p class="aside-container__events-time">March 4 18:00–20:00</p>
-						<p class="aside-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">LECTURES</p>
-						<p class="aside-container__events-time">January 20 12:00-14:00</p>
-						<p class="aside-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 5 16:00-17:00</p>
-						<p class="aside-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 12 18:00</p>
-						<p class="aside-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">open seminars</p>
-						<p class="aside-container__events-time">March 4 18:00–20:00</p>
-						<p class="aside-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">LECTURES</p>
-						<p class="aside-container__events-time">January 20 12:00-14:00</p>
-						<p class="aside-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 5 16:00-17:00</p>
-						<p class="aside-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">Exhibitions</p>
-						<p class="aside-container__events-time">february 12 18:00</p>
-						<p class="aside-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-					</li>
-					<li class="aside-container__events-list-item">
-						<p class="aside-container__events-category">open seminars</p>
-						<p class="aside-container__events-time">March 4 18:00–20:00</p>
-						<p class="aside-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-					</li>
+					
 				</ul>
 			</div>
 
@@ -181,71 +127,12 @@
 					<p class="mobile-container__events-header">Upcoming Events</p>
 					<button class="mobile-container__button close-event-button">close</button>
 					<div class="mobile-container__events-buttondiv">
-						<button class="mobile-container__button">LECTURES</button>
-						<button class="mobile-container__button">EXHIBITIONS</button>
-						<button class="mobile-container__button">OPEN SEMINARS</button>
+						<button class="mobile-container__button" data-category="lectures">LECTURES</button>
+						<button class="mobile-container__button" data-category="exhibitions">EXHIBITIONS</button>
+						<button class="mobile-container__button" data-category="open seminars">OPEN SEMINARS</button>
 					</div>
 					<ul class="mobile-container__events-list">
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">LECTURES</p>
-							<p class="mobile-container__events-time">January 20 12:00-14:00</p>
-							<p class="mobile-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 5 16:00-17:00</p>
-							<p class="mobile-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 12 18:00</p>
-							<p class="mobile-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">open seminars</p>
-							<p class="mobile-container__events-time">March 4 18:00–20:00</p>
-							<p class="mobile-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">LECTURES</p>
-							<p class="mobile-container__events-time">January 20 12:00-14:00</p>
-							<p class="mobile-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 5 16:00-17:00</p>
-							<p class="mobile-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 12 18:00</p>
-							<p class="mobile-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">open seminars</p>
-							<p class="mobile-container__events-time">March 4 18:00–20:00</p>
-							<p class="mobile-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">LECTURES</p>
-							<p class="mobile-container__events-time">January 20 12:00-14:00</p>
-							<p class="mobile-container__events-title">Conversation: Sami Sami sacred mountains and sacrificial stones</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 5 16:00-17:00</p>
-							<p class="mobile-container__events-title">Free guided tour in Kunna Guanna Concha</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">Exhibitions</p>
-							<p class="mobile-container__events-time">february 12 18:00</p>
-							<p class="mobile-container__events-title">Exhibition opening: Metahaven and Susanne M. Winterling</p>
-						</li>
-						<li class="mobile-container__events-list-item">
-							<p class="mobile-container__events-category">open seminars</p>
-							<p class="mobile-container__events-time">March 4 18:00–20:00</p>
-							<p class="mobile-container__events-title">Monumental love - Art historian Marit Paasche on Hannah Ryggen</p>
-						</li>
+						
 					</ul>
 				</div>
 				<img class="mobile-container__images" src="/assets/images/alan-rostovtev.webp" alt="">
