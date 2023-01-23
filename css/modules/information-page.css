@@ -28,28 +28,17 @@
 	grid-column-start: 2;
 }
 
-.main-container__text-1 {
+.main-container__text-1, .main-container__text-2, 
+.main-container__text-3, .main-container__text-4 {
 	font-size: var(--body-fontsize);
 	line-height: 1.15rem;
 }
 
-.main-container__text-2 {
-	font-size: var(--body-fontsize);
-	line-height: 1.15rem;
-	text-indent: 3rem;
-}
-
-.main-container__text-3 {
-	font-size: var(--body-fontsize);
-	line-height: 1.15rem;
-	text-indent: 3rem;
-}
-
+.main-container__text-2, .main-container__text-3, 
 .main-container__text-4 {
-	font-size: var(--body-fontsize);
 	text-indent: 3rem;
-	line-height: 1.15rem;
 }
+
 
 @media screen and (max-width: 576px) {
 	.main-container__content-box {
