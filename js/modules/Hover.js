@@ -80,8 +80,9 @@ export default function Hover(){
 
 	function imageHoverOn(event) {
 		let currentTarget = event.currentTarget.dataset.index;
-		let imageHeigth = getComputedStyle(event.currentTarget);
-		hoverImage[currentTarget].style.height = imageHeigth.height
+		let imageStyle = getComputedStyle(event.currentTarget);
+		hoverImage[currentTarget].style.height = imageStyle.height;
+		hoverImage[currentTarget].style.width = imageStyle.width;
 		standardImage[currentTarget].classList.add('image__standard-image--inactive');
 		hoverImage[currentTarget].classList.add('image__hover-image--active');
 
