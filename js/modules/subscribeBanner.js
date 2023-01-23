@@ -3,12 +3,14 @@ export default function subscribeBanner() {
 	const mainContainer = document.querySelector('.main-container');
 	const subscribeBanner = document.querySelector('.main-container__subscribe-banner');
 	const subscribeBannerClose = document.querySelector('.main-container__subscribe-banner-close');
+	const subscribeAsideItem = document.querySelector('.aside-container__subscribe');
 
 	// Session Storage
 	const bannerIsClosed = sessionStorage.getItem('subscribeBannerIsClosed');
 
 	if (bannerIsClosed) {
 		hideBanner();
+		subscribeAsideToggle();
 	}
 	
 	// Event Listeners
@@ -19,6 +21,7 @@ export default function subscribeBanner() {
 	// Handlers
 	function handleBannerCloseClick() {
 		updateBannerOpacity();
+		subscribeAsideToggle();
 		sessionStorage.setItem('subscribeBannerIsClosed', true);
 	}
 	
@@ -27,6 +30,10 @@ export default function subscribeBanner() {
 	}
 
 	// Functions
+	function subscribeAsideToggle() {
+		subscribeAsideItem.classList.toggle('aside-container__subscribe--active');
+	}
+
 	function updateBannerOpacity() {
 		subscribeBanner.style.opacity = 0;
 	}

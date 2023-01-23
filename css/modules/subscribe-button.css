@@ -56,6 +56,14 @@
 	transform: rotate(-45deg);
 }
 
+.aside-container__subscribe {
+	display: none;
+}
+
+.aside-container__subscribe--active {
+	display: block;
+}
+
 /* Hover effect only on desktop */
 @media screen and (min-width: 1024px) {
 	.main-container__subscribe-banner:hover{
