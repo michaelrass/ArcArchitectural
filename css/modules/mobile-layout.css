@@ -167,6 +167,14 @@
 }
 
 @media (prefers-color-scheme: dark) {
+	.mobile-img_black {
+		display: none;
+	}
+	.mobile-img_white {
+		width: 100%;
+	}
+
+	
 	.mobile-container__button {
 		border: 0.05rem solid var(--secondary-color);
 	}
@@ -197,6 +205,9 @@
 }
 
 @media (prefers-color-scheme: light) {
+	.mobile-img_white {
+		display: none;
+	}
 
 	.mobile-container__button {
 		border: 0.05rem solid var(--primary-color);
@@ -231,5 +242,12 @@
 @media screen and (max-width: 28.8rem) {
 	.mobile-container {
 		display: block;
+	}
+	.mobile-img_black {
+		width: 100%;
+	}
+
+	.mobile-img_white {
+		width: 100%;
 	}
 }

@@ -15,6 +15,13 @@
 		border-top: 1px solid;
 		border-color: var(--primary-color);
 	}
+	.aside-img_white {
+		display: none;
+	}
+	.aside-img_purplecopy {
+		display: none;
+	}
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +29,16 @@
 		border-top: 1px solid;
 		border-color: var(--secondary-color);
 	}
+	.aside-img_white {
+		width: 100%;
+	}
+	.aside-img_black {
+		display: none;
+	}
+	.aside-img_purple {
+		display: none;
+	}
+
 }
 
 .header__logo-container {
