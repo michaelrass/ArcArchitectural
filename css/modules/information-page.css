@@ -50,3 +50,9 @@
 	text-indent: 3rem;
 	line-height: 1.15rem;
 }
+
+@media screen and (max-width: 576px) {
+	.main-container__content-box {
+		display: none;
+	}
+}

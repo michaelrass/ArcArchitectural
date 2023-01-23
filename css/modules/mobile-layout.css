@@ -206,6 +206,32 @@
 	text-indent: 3rem;
 }
 
+.mobile-container__head-text, .mobile-container__text-title {
+	font-size: var(--Large-fontsize);
+	line-height: 2.4rem;
+	margin-bottom: 1rem;
+}
+
+.mobile-container__image {
+	width: 100%;
+	margin-bottom: 1rem;
+}
+
+.mobile-container__text-1, .mobile-container__text-1, .mobile-container__text-1, .mobile-container__text-1 {
+	font-size: var(--body-fontsize);
+	line-height: 1.15rem;
+}
+
+.mobile-container__text-2, .mobile-container__text-3, .mobile-container__text-4 {
+	text-indent: 3rem;
+}
+
+.mobile-container__text-div {
+	margin-bottom: 1rem;
+}
+
+
+
 @media (prefers-color-scheme: dark) {
 	.mobile-container__button {
 		border: 0.05rem solid var(--secondary-color);
