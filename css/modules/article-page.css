@@ -80,3 +80,9 @@
 .main-container__article-text-5 {
 	text-indent: 3rem;
 }
+
+@media screen and (max-width: 576px) {
+	.main-container__article-content {
+		display: none;
+	}
+}
