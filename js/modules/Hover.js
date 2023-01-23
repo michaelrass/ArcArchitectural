@@ -2,9 +2,10 @@ export default function Hover(){
 	
 		const handleImgBlackHover = document.querySelector('.aside-img_black');
 		
+		
 		handleImgBlackHover.addEventListener("mouseover", BlackHover);
 		handleImgBlackHover.addEventListener("mouseleave", PurpleHover);
-	
+
 		function BlackHover () {
 			//alert('test1');
 			handleImgBlackHover.src = "/assets/images/logo/logoPurple.svg"
@@ -13,7 +14,18 @@ export default function Hover(){
 			//alert('test');
 			handleImgBlackHover.src = "/assets/images/logo/logoBlack.svg"
 		}
+
+		const standardWhiteImg = document.querySelector('.aside-img_white');
+
+		standardWhiteImg.addEventListener("mouseover", WhiteHover);
+		standardWhiteImg.addEventListener("mouseleave", PurpleHoverCopy);
 	
+		function WhiteHover () {
+			standardWhiteImg.src = "/assets/images/logo/logoPurple copy.svg"
+		}
+		function PurpleHoverCopy (){
+			standardWhiteImg.src = "/assets/images/logo/logoWhite.svg"
+		}
 
 	const standardImage = document.querySelectorAll('.image__standard-image');
 	const hoverImage = document.querySelectorAll('.image__hover-image');
@@ -49,6 +61,9 @@ export default function Hover(){
 		let currentTarget = event.currentTarget.dataset.index;
 		standardImage[currentTarget].classList.remove('image__standard-image--inactive');
 		hoverImage[currentTarget].classList.remove('image__hover-image--active');
-
 	}
+
+
+
+
 }
