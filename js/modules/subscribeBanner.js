@@ -3,6 +3,13 @@ export default function subscribeBanner() {
 	const mainContainer = document.querySelector('.main-container');
 	const subscribeBanner = document.querySelector('.main-container__subscribe-banner');
 	const subscribeBannerClose = document.querySelector('.main-container__subscribe-banner-close');
+
+	// Session Storage
+	const bannerIsClosed = sessionStorage.getItem('subscribeBannerIsClosed');
+
+	if (bannerIsClosed) {
+		hideBanner();
+	}
 	
 	// Event Listeners
 	subscribeBannerClose.addEventListener('click', handleBannerCloseClick);
@@ -12,6 +19,7 @@ export default function subscribeBanner() {
 	// Handlers
 	function handleBannerCloseClick() {
 		updateBannerOpacity();
+		sessionStorage.setItem('subscribeBannerIsClosed', true);
 	}
 	
 	function handleBannerAnimation() {
@@ -31,6 +39,6 @@ export default function subscribeBanner() {
 		let currentImageWidth = getComputedStyle(mainContainer)
 		subscribeBanner.style.width = currentImageWidth.width;
 	}
-	
+
 	setWidth();
 }
