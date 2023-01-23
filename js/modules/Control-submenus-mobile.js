@@ -1,7 +1,6 @@
 export default function controlSubMenuMobile() {
 	
 	const openNavigationButton = document.querySelector('.mobile-container__header-menu-button');
-	const closeNavigationButton = document.querySelector('.close-navigation-button')
 	const openEventsButton = document.querySelector('.go-to-events-button');
 	const closeEventsButton = document.querySelector('.close-event-button');
 	
@@ -9,7 +8,6 @@ export default function controlSubMenuMobile() {
 	const upcommingEventsContainer = document.querySelector('.mobile-container__events-mobile');
 
 	openNavigationButton.addEventListener('click', handleOpenNavigationButtonClick);
-	closeNavigationButton.addEventListener('click', handleCloseNavigationButtonClick);
 	openEventsButton.addEventListener('click', handleOpenEventsButtonClick)
 	closeEventsButton.addEventListener('click', handleCloseButtonClick);
 
