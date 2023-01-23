@@ -38,10 +38,8 @@ body {
 	}
 }
 
-@media screen and (max-width: 28.8rem) {
+@media screen and (max-width: 576px) {
 	body {
 		grid-template-columns: none;
-
-
 	}
 }
