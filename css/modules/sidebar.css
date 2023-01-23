@@ -87,3 +87,8 @@
 	}
 }
 
+@media screen and (max-width: 576px) {
+	.aside-container {
+		display: none;
+	}
+}
