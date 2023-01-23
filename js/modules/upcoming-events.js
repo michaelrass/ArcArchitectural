@@ -10,6 +10,8 @@ export default function upcomingEvents(){
 	const sortEventsButtonsDesktop = document.querySelectorAll('.aside-container__events-button');
 	const sortEventsButtonsMobile = document.querySelectorAll('.mobile-container__button');
 
+	const asideContainer = document.querySelector('.aside-container')
+
 	render();
 
 	sortEventsButtonsDesktop.forEach(element => {
@@ -46,7 +48,9 @@ export default function upcomingEvents(){
 				}
 				
 			})
+			asideContainer.scrollTo(0, 1000000)
 		}
+
 	}
 
 	function sortEventsMobile(event) {
