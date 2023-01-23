@@ -47,11 +47,17 @@
 
 .aside-img_black {
 	width: 100%;
+	margin-bottom: 1rem;
 }
 .aside-img_purple {
 	width: 100%;
 	display: none;
+	margin-bottom: 1rem;
 }
 .aside-img_purplecopy{
 	display: none;
+	margin-bottom: 1rem;
+}
+.aside-img_white {
+	margin-bottom: 1rem;
 }
