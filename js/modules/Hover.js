@@ -1,37 +1,8 @@
 export default function Hover(){
-	
-		const handleImgBlackHover = document.querySelector('.aside-img_black');
-		
-		if(handleImgBlackHover) {
-			handleImgBlackHover.addEventListener("mouseover", BlackHover);
-			handleImgBlackHover.addEventListener("mouseleave", PurpleHover);
-		}
+	let entered = ''
 
-
-		function BlackHover () {
-			//alert('test1');
-			handleImgBlackHover.src = "/assets/images/logo/logoPurple.svg"
-		}
-		function PurpleHover (){
-			//alert('test');
-			handleImgBlackHover.src = "/assets/images/logo/logoBlack.svg"
-		}
-
-		const standardWhiteImg = document.querySelector('.aside-img_white');
-
-		if(standardWhiteImg) {
-			standardWhiteImg.addEventListener("mouseover", WhiteHover);
-			standardWhiteImg.addEventListener("mouseleave", PurpleHoverCopy);
-		}
-
-	
-		function WhiteHover () {
-			standardWhiteImg.src = "/assets/images/logo/logoPurple copy.svg"
-		}
-		function PurpleHoverCopy (){
-			standardWhiteImg.src = "/assets/images/logo/logoWhite.svg"
-		}
-
+	const logoImageBlack = document.querySelector('.aside-img_black');
+	const logoImageWhite = document.querySelector('.aside-img_white');
 	const standardImage = document.querySelectorAll('.image__standard-image');
 	const hoverImage = document.querySelectorAll('.image__hover-image');
 	
@@ -42,10 +13,63 @@ export default function Hover(){
 		hoverImage.forEach(element => {
 			element.addEventListener('mouseout', handleMouseLeave)
 		})
+
+		if(logoImageBlack) {
+			logoImageBlack.addEventListener('mouseover', handleLogoImageBlackEnter);
+			logoImageBlack.addEventListener('mouseleave', handleLogoImageBlackLeave);
+		}
+	
+		if(logoImageWhite) {
+			logoImageWhite.addEventListener('mouseover', handleLogoImageWhiteEnter);
+			logoImageWhite.addEventListener('mouseleave' , handleLogoImageWhiteLeave);
+		}
+	}
+
+
+
+	function handleLogoImageBlackEnter () {
+		toggleLogoColorBlackPurple('black');
+	}
+	function handleLogoImageBlackLeave (){
+		toggleLogoColorBlackPurple('black');
+	}
+
+	function handleLogoImageWhiteEnter () {
+		toggleLogoColorWhitePurple('white');
+	}
+	function handleLogoImageWhiteLeave (){
+		toggleLogoColorWhitePurple('white');
 	}
 	
+	function toggleLogoColorBlackPurple(currentEntered) {
+		logoImageBlack.src = changeSource(currentEntered);
+	}
 
-	
+	function toggleLogoColorWhitePurple(currentEntered) {
+		logoImageWhite.src = changeSource(currentEntered);
+	}
+
+	function changeSource(currentEntered) {
+
+		let sourcePurple = "/assets/images/logo/logoPurple.svg"
+		let sourceBlack = "/assets/images/logo/logoBlack.svg"
+		let sourceWhite = "/assets/images/logo/LogoWhite.svg"
+		let changeSource
+
+		if(entered === 'white'){
+			changeSource = sourceWhite;
+			entered = ''
+		}else if(entered === 'black'){
+			changeSource = sourceBlack;
+			entered=''
+		}else {
+			changeSource = sourcePurple
+			entered = currentEntered
+		}
+
+		return changeSource
+	}
+
 	function handleMouseEnter(event){
 		imageHoverOn(event);
 	}
