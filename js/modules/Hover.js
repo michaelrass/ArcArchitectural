@@ -2,9 +2,11 @@ export default function Hover(){
 	
 		const handleImgBlackHover = document.querySelector('.aside-img_black');
 		
-		
-		handleImgBlackHover.addEventListener("mouseover", BlackHover);
-		handleImgBlackHover.addEventListener("mouseleave", PurpleHover);
+		if(handleImgBlackHover) {
+			handleImgBlackHover.addEventListener("mouseover", BlackHover);
+			handleImgBlackHover.addEventListener("mouseleave", PurpleHover);
+		}
+
 
 		function BlackHover () {
 			//alert('test1');
@@ -17,8 +19,11 @@ export default function Hover(){
 
 		const standardWhiteImg = document.querySelector('.aside-img_white');
 
-		standardWhiteImg.addEventListener("mouseover", WhiteHover);
-		standardWhiteImg.addEventListener("mouseleave", PurpleHoverCopy);
+		if(standardWhiteImg) {
+			standardWhiteImg.addEventListener("mouseover", WhiteHover);
+			standardWhiteImg.addEventListener("mouseleave", PurpleHoverCopy);
+		}
+
 	
 		function WhiteHover () {
 			standardWhiteImg.src = "/assets/images/logo/logoPurple copy.svg"
