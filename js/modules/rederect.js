@@ -15,8 +15,8 @@ export default function Rederect() {
 		element.addEventListener('click', handleImageClick)
 	})
 	
-	function handleImageClick(){
-		console.log('click')
+	function handleImageClick(event){
+		setLocalStorageClickedImage(event);
 		navigateToPage();
 	}
 	
@@ -26,6 +26,11 @@ export default function Rederect() {
 
 	function navigateToHome() {
 		window.location.href='/'
+	}
+
+	function setLocalStorageClickedImage(event) {
+		let clickedImage = event.currentTarget.dataset.index
+		localStorage.setItem('clickedIndex', clickedImage)
 	}
 
 	function navigateToPage() {
