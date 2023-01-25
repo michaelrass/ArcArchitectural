@@ -1,21 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Arc Architectural</title>
-		<link rel="stylesheet" href="/css/main.css">
-		<script type="module" src="/js/main.js"></script>
-	</head>
-	<body>
-		<form action="post">
-			<fieldset>
-				<legend>
-					Subscribe to our architecture</legend>
-				<label for="email">Email</label>
-				<input type="email" name="email" id="email" placeholder="Enter your email">
-				<button type="submit">Subscribe</button>
-			</fieldset>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Arc Architectural</title>
+	<link rel="stylesheet" href="/css/main.css">
+	<script type="module" src="/js/main.js"></script>
+</head>
+<body>
+	
+	<aside class="aside-container">
+		<header class="aside-container__header">
+			<a href="/index.html">
+				<img id="asideImgBlack" class="aside-img_black" 
+				src="/assets/images/logo/logoBlack.svg" 
+				alt="">
+			</a>
+			
+			<a href="/index.html">
+				<img id="asideImgPurple" class="aside-img_purple" 
+				src="/assets/images/logo/logoPurple.svg" 
+				alt="">
+			</a>
+			
+			<a href="/index.html">
+				<img id="asideImgWhite" class="aside-img_white" 
+				src="/assets/images/logo/LogoWhite.svg" 
+				alt="">
+			</a>
+			
+			<a href="/index.html">
+				<img id="asideImgPurpleCopy" class="aside-img_purplecopy" 
+				src="/assets/images/logo/logoPurple copy.svg" 
+				alt="">
+			</a>
+			
+			<h1 class="aside-container__header-logo">Arc Architectural</h1><br>
+			<p class="aside-container__header-text">AA was founded in 1847 with the aspiration of ‘promoting and affording facilities for the study of architecture for the public benefit’. Likeness it them very firmament without created also bring a one Whose she'd in. Sea unto created every together together. For that wherein. Kind sea earth them was place. Sixth signs saying after replenish multiply. Female every unto beginning appear moving tree the bearing own.</p>
+		</header>
+		<nav class="aside-container__navigation">
+			<ul class="aside-container__navigation-list">
+				<li class="aside-container__navigation-list-item"><a href="html/landingpages/information.html">Announcements</a></li>
+				<li class="aside-container__navigation-list-item"><a href="html/landingpages/information.html">Journal</a></li>
+				<li class="aside-container__navigation-list-item"><a href="html/landingpages/information.html">Reviews</a></li>
+				<li class="aside-container__navigation-list-item"><a href="html/landingpages/information.html">Books</a></li>
+				<li class="aside-container__navigation-list-item"><a href="html/landingpages/information.html">Information</a></li>
+				<li class="aside-container__navigation-list-item aside-container__subscribe"><a href="html/landingpages/subscribe.html">Subscribe</a></li>
+			</ul>
+		</nav>
+		<div class="aside-container__events">
+			<p class="aside-container__events-header">Upcoming Events</p>
+			<div class="aside-container__events-buttondiv">
+				<button class="aside-container__events-button" data-category="lectures">LECTURES</button>
+				<button class="aside-container__events-button" data-category="exhibitions">EXHIBITIONS</button>
+				<button class="aside-container__events-button" data-category="open seminars">OPEN SEMINARS</button>
+			</div>
+			<ul class="aside-container__events-list">	
+			</ul>
+		</div>
+	</aside>
+	
+	<div class="mobile-container">
+		
+		<a href="/index.html">
+			<img id="mobileImgBlack" class="mobile-img_black" 
+			src="/assets/images/logo/logoBlack.svg" 
+			alt="">
+		</a>
+		<a href="/index.html">
+			<img id="mobileImgWhite" class="mobile-img_white" 
+			src="/assets/images/logo/LogoWhite.svg" 
+			alt="">
+		</a>
+		
+		<header class="mobile-container__header" style="height: auto;">
+			
+			<h2 class="mobile-container__header-title">Arc Architectural</h2>
+			<button class="mobile-container__header-search-button"><img src="/assets/images/Search.svg" alt=""></button>
+			<button class="mobile-container__header-menu-button"><img src="/assets/images/Menu.svg" alt=""></button>
+		</header>
+		
+		<nav class="mobile-container__navigation">
+			<ul class="mobile-container__navigation-list">
+				<li class="mobile-container__navigation-list-item"><a href="html/landingpages/information.html">Announcements</a></li>
+				<li class="mobile-container__navigation-list-item"><a href="html/landingpages/information.html">Journal</a></li>
+				<li class="mobile-container__navigation-list-item"><a href="html/landingpages/information.html">Reviews</a></li>
+				<li class="mobile-container__navigation-list-item"><a href="html/landingpages/information.html">Books</a></li>
+				<li class="mobile-container__navigation-list-item"><a href="html/landingpages/information.html">Information</a></li>
+			</ul>
+			<button class="mobile-container__button go-to-events-button">Open Upcoming Events</button>
+		</nav>
+		<div class="mobile-container__events-mobile">
+			<p class="mobile-container__events-header">Upcoming Events</p>
+			<button class="mobile-container__button close-event-button">close</button>
+			<div class="mobile-container__events-buttondiv">
+				<button class="mobile-container__button" data-category="lectures">LECTURES</button>
+				<button class="mobile-container__button" data-category="exhibitions">EXHIBITIONS</button>
+				<button class="mobile-container__button" data-category="open seminars">OPEN SEMINARS</button>
+			</div>
+			<ul class="mobile-container__events-list">
+				
+			</ul>
+		</div>
+	</div>
+	
+	<main class="main-container">
+		<h1 class="subscribe__header-headline">Subscribe<span> to our newsletter</span></h1>
+		<p class="subscribe__header-paragraph">Stay informed and inspired with our newsletter about architecture, art, and more! Sign up now to stay in the loop and explore the world of architecture and art.</p>
+		<form id="newsletter__form">
+			<button type="submit" value="submit" id="submit">Subscribe</button>
+			<input type="email" name="email" class="newsletter__form-email-input" id="email" placeholder="Enter your email" required>
 		</form>
-	</body>
+	</main>	
+</body>
 </html>
