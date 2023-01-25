@@ -64,6 +64,7 @@
 	display: block;
 }
 
+/* SUBSCRIBE LANDING PAGE AND FORM */
 .subscribe__header-headline,
 .subscribe__header-paragraph {
 	font-family: Helvetica, sans-serif;
@@ -81,13 +82,12 @@
 	margin-bottom: 8rem;
 }
 
-/* SUBSCRIBE LANDING PAGE AND FORM */
 #newsletter__form {
 	display: flex;
 	flex-direction: row-reverse;
 	justify-content: center;
 	align-items: center;
-	z-index: 24384023;
+
 }
 
 #newsletter__form input[type="email"] {
@@ -115,7 +115,19 @@
 	background-color: var(--quaternary-color);
 }
 
-/* Hover effect only on desktop */
+.newsletter__undertext-container {
+	padding-top: 0.5rem;
+	margin: auto;
+	width: 60%;
+}
+
+.newsletter__undertext {
+	opacity: 0.3;
+	font-size: var(--small-fontsize);
+	color: var(--quaternary-color);
+}
+
+/* desktop specific styiling */
 @media screen and (min-width: 1024px) {
 	.main-container__subscribe-banner:hover{
 		color: white;
@@ -127,6 +139,10 @@
 		background-color: white;
 	}
 	
+	.subscribe__header-headline {
+		padding-top: 8rem
+	}
+
 	@media (prefers-color-scheme: light) {
 		#newsletter__form button[type="submit"]:hover {
 			background-color: var(--tertiary-color);
@@ -177,6 +193,10 @@
 }
 
 @media screen and (max-width: 576px) {
+	.subscribe__header-paragraph span {
+		display: none;
+	}
+	
 	.subscribe__header-headline {
 		margin-top: -0.2rem;
 	}
