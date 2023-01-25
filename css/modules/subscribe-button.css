@@ -199,7 +199,6 @@
 		font-size: var(--large-font-size);
 		width: 95%;
 	}
-	
 }
 
 @media screen and (max-width: 576px) {
@@ -212,7 +211,7 @@
 	}
 	
 	.subscribe__header-headline {
-		margin-top: -0.2rem;
+		margin-top: -8.2rem;
 	}
 
 	.subscribe__header-paragraph {
