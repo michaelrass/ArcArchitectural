@@ -25,15 +25,15 @@ export default function Rederect() {
 	}
 
 	function navigateToHome() {
-		window.location.href='/'
+		window.location.href='/';
 	}
 
 	function setLocalStorageClickedImage(event) {
-		let clickedImage = event.currentTarget.dataset.index
-		localStorage.setItem('clickedIndex', clickedImage)
+		let clickedImage = event.currentTarget.dataset.index;
+		localStorage.setItem('clickedIndex', clickedImage);
 	}
 
 	function navigateToPage() {
-		window.location.href='/html/landingpages/article.html'
+		window.location.href='/html/landingpages/article.html';
 	}
 }
