@@ -201,6 +201,10 @@
 	.subscribe__header-paragraph span {
 		display: none;
 	}
+
+	.newsletter__undertext-container {
+		display: none;
+	}
 	
 	.subscribe__header-headline {
 		margin-top: -0.2rem;
