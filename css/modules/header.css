@@ -4,6 +4,36 @@
 	font-weight: 700;
 }
 
+@media only screen and (max-width: 1050px) and (min-width: 953px) {
+	.aside-container__header-logo {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 952px) and (min-width: 801px) {
+	.aside-container__header-logo {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 701px) {
+	.aside-container__header-logo {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 700px) and (min-width: 601px) {
+	.aside-container__header-logo {
+		font-size: 1.1rem;
+	}
+}
+
+@media only screen and (max-width: 600px) and (min-width: 577px) {
+	.aside-container__header-logo {
+		font-size: 1rem;
+	}
+}
+
 .aside-container__header-text {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
