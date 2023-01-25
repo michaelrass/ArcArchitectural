@@ -1,6 +1,8 @@
 import upcomingEvents from "./upcoming-events.js";
 
 export default function controlSubMenuMobile() {
+
+	const mainContainer = document.querySelector('.main-container')
 	
 	const openNavigationButton = document.querySelector('.mobile-container__header-menu-button');
 	const openEventsButton = document.querySelector('.go-to-events-button');
@@ -8,6 +10,9 @@ export default function controlSubMenuMobile() {
 	
 	const navigationWindow = document.querySelector('.mobile-container__navigation')
 	const upcommingEventsContainer = document.querySelector('.mobile-container__events-mobile');
+
+	const mobileHeader = document.querySelector('.mobile-container__header');
+	const mobileLogo = document.querySelector('.mobile-container__logo-container')
 
 	openNavigationButton.addEventListener('click', handleOpenNavigationButtonClick);
 	openEventsButton.addEventListener('click', handleOpenEventsButtonClick)
@@ -20,10 +25,12 @@ export default function controlSubMenuMobile() {
 	function handleOpenNavigationButtonClick() {
 		toggleNavigationWindow();
 		closeEvents();
+		positionNavigationMobile();
 	}
 
 	function handleOpenEventsButtonClick() {
 		toggleEventsWindow();
+		positionEventsMobile();
 	}
 
 	function toggleEventsWindow() {
@@ -44,12 +51,31 @@ export default function controlSubMenuMobile() {
 		}else{
 			navigationWindow.style.display = 'block';
 		}
+		toggleEventsWindow();
 	}
 
 	function closeEvents() {
 		let eventsDisplayStatus = getComputedStyle(upcommingEventsContainer);
 		if(eventsDisplayStatus.display === 'block'){
 			upcommingEventsContainer.style.display = 'none';
+		}
+	}
+
+	function positionNavigationMobile() {
+		let headerMobile = getComputedStyle(mobileHeader);
+		let logoMobile = getComputedStyle(mobileLogo);
+		let heightLogoHeader = parseFloat(headerMobile.height) + parseFloat(logoMobile.height);
+		if(mainContainer.scrollTop > heightLogoHeader){
+			navigationWindow.style.top = headerMobile.height
+		}
+	}
+
+	function positionEventsMobile() {
+		let headerMobile = getComputedStyle(mobileHeader);
+		let logoMobile = getComputedStyle(mobileLogo);
+		let heightLogoHeader = parseFloat(headerMobile.height) + parseFloat(logoMobile.height);
+		if(mainContainer.scrollTop > heightLogoHeader){
+			upcommingEventsContainer.style.top = headerMobile.height
 		}
 	}
 
