@@ -32,7 +32,7 @@
 
 .mobile-container__navigation {
 	display: none;
-	position: absolute;
+	position: fixed;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
 	margin: 0px;
@@ -83,7 +83,7 @@
 
 .mobile-container__events-mobile{
 	display: none;
-	position: absolute;
+	position: fixed;
 	overflow: scroll;
 	height: 75vh;
 }
