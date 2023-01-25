@@ -81,6 +81,7 @@ export default function upcomingEvents(){
 	}
 
 	function render() {
+		eventsContainerMobile.innerText = ''
 		events.forEach(item => {
 			if(window.innerWidth < 576){
 				let eventListItem = generateEventsListMobileDOM(item);

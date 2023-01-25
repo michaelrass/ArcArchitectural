@@ -1,3 +1,5 @@
+import upcomingEvents from "./upcoming-events.js";
+
 export default function controlSubMenuMobile() {
 	
 	const openNavigationButton = document.querySelector('.mobile-container__header-menu-button');
@@ -20,10 +22,6 @@ export default function controlSubMenuMobile() {
 		closeEvents();
 	}
 
-	function handleCloseNavigationButtonClick() {
-		toggleNavigationWindow();
-	}
-
 	function handleOpenEventsButtonClick() {
 		toggleEventsWindow();
 	}
@@ -35,6 +33,7 @@ export default function controlSubMenuMobile() {
 		}else {
 			upcommingEventsContainer.style.display = 'block';
 		}
+		upcomingEvents();
 
 	}
 
