@@ -176,7 +176,8 @@
 /* responsivity for mobile screens */
 @media screen and (max-width: 1024px) {
 	.main-container__subscribe-banner span,
-	.subscribe__header-headline span {
+	.subscribe__header-headline span,
+	.subscribe__header-paragraph span {
 		display: none;
 	}
 	
@@ -199,13 +200,13 @@
 		font-size: var(--large-font-size);
 		width: 95%;
 	}
+
+	#newsletter__form input[type="email"] {
+		font-size: 17px
+	}
 }
 
 @media screen and (max-width: 576px) {
-	.subscribe__header-paragraph span {
-		display: none;
-	}
-
 	.newsletter__undertext-container {
 		display: none;
 	}
