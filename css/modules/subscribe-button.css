@@ -184,6 +184,10 @@
 		font-size: var(--large-font-size);
 		width: 95%;
 	}
+
+	.subscribe__header-headline {
+		padding-top: 8rem
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -195,6 +199,7 @@
 		font-size: var(--large-font-size);
 		width: 95%;
 	}
+	
 }
 
 @media screen and (max-width: 576px) {
