@@ -60,6 +60,13 @@
 	}
 }
 
+@media only screen and (max-width: 738px) and (min-width: 577px) {
+	.aside-container__events-buttondiv {
+		grid-template-columns: repeat(4, 1fr);
+		
+	}
+}
+
 .aside-container__events-list{
 	list-style-type: none;
 }
