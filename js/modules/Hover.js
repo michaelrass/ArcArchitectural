@@ -8,10 +8,10 @@ export default function Hover(){
 	
 	if(window.innerWidth > 576){
 		standardImage.forEach(element => {
-			element.addEventListener('mouseover', handleMouseEnter)
+			element.addEventListener('mouseover', handleMouseEnter);
 		})
 		hoverImage.forEach(element => {
-			element.addEventListener('mouseout', handleMouseLeave)
+			element.addEventListener('mouseout', handleMouseLeave);
 		})
 
 		if(logoImageBlack) {
@@ -51,23 +51,23 @@ export default function Hover(){
 
 	function changeSource(currentEntered) {
 
-		let sourcePurple = "/assets/images/logo/logoPurple.svg"
-		let sourceBlack = "/assets/images/logo/logoBlack.svg"
-		let sourceWhite = "/assets/images/logo/LogoWhite.svg"
-		let changeSource
+		let sourcePurple = "/assets/images/logo/logoPurple.svg";
+		let sourceBlack = "/assets/images/logo/logoBlack.svg";
+		let sourceWhite = "/assets/images/logo/LogoWhite.svg";
+		let changeSource;
 
 		if(entered === 'white'){
 			changeSource = sourceWhite;
-			entered = ''
+			entered = '';
 		}else if(entered === 'black'){
 			changeSource = sourceBlack;
-			entered=''
+			entered='';
 		}else {
-			changeSource = sourcePurple
-			entered = currentEntered
+			changeSource = sourcePurple;
+			entered = currentEntered;
 		}
 
-		return changeSource
+		return changeSource;
 	}
 
 	function handleMouseEnter(event){
@@ -100,8 +100,4 @@ export default function Hover(){
 		standardImage[currentTarget].classList.remove('image__standard-image--inactive');
 		hoverImage[currentTarget].classList.remove('image__hover-image--active');
 	}
-
-
-
-
 }

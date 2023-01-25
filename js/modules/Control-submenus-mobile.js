@@ -2,7 +2,7 @@ import upcomingEvents from "./upcoming-events.js";
 
 export default function controlSubMenuMobile() {
 
-	const mainContainer = document.querySelector('.main-container')
+	const mainContainer = document.querySelector('.main-container');
 	
 	const openNavigationButton = document.querySelector('.mobile-container__header-menu-button');
 	const openEventsButton = document.querySelector('.go-to-events-button');
@@ -12,10 +12,10 @@ export default function controlSubMenuMobile() {
 	const upcommingEventsContainer = document.querySelector('.mobile-container__events-mobile');
 
 	const mobileHeader = document.querySelector('.mobile-container__header');
-	const mobileLogo = document.querySelector('.mobile-container__logo-container')
+	const mobileLogo = document.querySelector('.mobile-container__logo-container');
 
 	openNavigationButton.addEventListener('click', handleOpenNavigationButtonClick);
-	openEventsButton.addEventListener('click', handleOpenEventsButtonClick)
+	openEventsButton.addEventListener('click', handleOpenEventsButtonClick);
 	closeEventsButton.addEventListener('click', handleCloseButtonClick);
 
 	function handleCloseButtonClick(){
@@ -66,7 +66,7 @@ export default function controlSubMenuMobile() {
 		let logoMobile = getComputedStyle(mobileLogo);
 		let heightLogoHeader = parseFloat(headerMobile.height) + parseFloat(logoMobile.height);
 		if(mainContainer.scrollTop > heightLogoHeader){
-			navigationWindow.style.top = headerMobile.height
+			navigationWindow.style.top = headerMobile.height;
 		}
 	}
 
@@ -75,7 +75,7 @@ export default function controlSubMenuMobile() {
 		let logoMobile = getComputedStyle(mobileLogo);
 		let heightLogoHeader = parseFloat(headerMobile.height) + parseFloat(logoMobile.height);
 		if(mainContainer.scrollTop > heightLogoHeader){
-			upcommingEventsContainer.style.top = headerMobile.height
+			upcommingEventsContainer.style.top = headerMobile.height;
 		}
 	}
 
