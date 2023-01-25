@@ -63,7 +63,22 @@
 @media only screen and (max-width: 738px) and (min-width: 577px) {
 	.aside-container__events-buttondiv {
 		grid-template-columns: repeat(4, 1fr);
-		
+		grid-template-rows: auto;
+		grid-template-areas:
+		"a a b b"
+		". c c .";
+	}
+
+	.aside-container__events-button__item1 {
+		grid-area: a;
+	}
+
+	.aside-container__events-button__item2 {
+		grid-area: b;
+	}
+
+	.aside-container__events-button__item3 {
+		grid-area: c;
 	}
 }
 
