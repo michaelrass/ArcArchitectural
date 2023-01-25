@@ -1,3 +1,6 @@
+/*Stylesheet for all subscription related functions */
+
+/* Subscribe Banner */
 .main-container__subscribe {
 	overflow: hidden;
 	position: fixed;
@@ -40,6 +43,7 @@
 	border: none;
 }
 
+/* Using transformed ::before and ::after to create an X */
 .main-container__subscribe-banner-close::before, .main-container__subscribe-banner-close::after {
 	content: "";
 	position: absolute;
@@ -56,6 +60,7 @@
 	transform: rotate(-45deg);
 }
 
+/* Subscribe menu item in aside */
 .aside-container__subscribe {
 	display: none;
 }
@@ -64,7 +69,7 @@
 	display: block;
 }
 
-/* SUBSCRIBE LANDING PAGE AND FORM */
+/* Subscribe to newsletter page - html/landingpages/subscribe.html */
 .subscribe__header-headline,
 .subscribe__header-paragraph {
 	font-family: Helvetica, sans-serif;
@@ -127,7 +132,7 @@
 	color: var(--quaternary-color);
 }
 
-/* desktop specific styiling */
+/* Desktop specific styiling */
 @media screen and (min-width: 1024px) {
 	.main-container__subscribe-banner:hover{
 		color: white;
@@ -214,7 +219,7 @@
 	}
 }
 
-/* light and dark mode for newsletts__form and its children*/
+/* Light mode for newsletts__form and its children. Darkmdoe is default in stylesheet */
 @media (prefers-color-scheme: light) {
 	#newsletter__form input[type="email"] {
 		background-color: var(--secondary-color);
