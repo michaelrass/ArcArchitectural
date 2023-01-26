@@ -1,3 +1,6 @@
+/*Stylesheet for all subscription related functions */
+
+/* Subscribe Banner */
 .main-container__subscribe {
 	overflow: hidden;
 	position: fixed;
@@ -40,6 +43,7 @@
 	border: none;
 }
 
+/* Using transformed ::before and ::after to create an X */
 .main-container__subscribe-banner-close::before, .main-container__subscribe-banner-close::after {
 	content: "";
 	position: absolute;
@@ -56,6 +60,7 @@
 	transform: rotate(-45deg);
 }
 
+/* Subscribe menu item in aside */
 .aside-container__subscribe {
 	display: none;
 }
@@ -64,7 +69,70 @@
 	display: block;
 }
 
-/* Hover effect only on desktop */
+/* Subscribe to newsletter page - html/landingpages/subscribe.html */
+.subscribe__header-headline,
+.subscribe__header-paragraph {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	margin: 0 40px;
+	padding: 0 0 1rem 0;
+}
+
+.subscribe__header-headline {
+	font-size: 2rem;
+}
+
+.subscribe__header-paragraph {
+	font-size: var(--small-font-size);
+	margin-bottom: 8rem;
+}
+
+#newsletter__form {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#newsletter__form input[type="email"] {
+	width: 60%;
+	height: 50px;
+	border: none;
+	padding: 20px;
+	font-size: var(--large-font-size);
+	font-family: helvetica, sans-serif;
+	border-radius: 10px 0 0 10px;
+	border-top: 2px solid var(--quaternary-color);
+	border-bottom: 2px solid var(--quaternary-color);
+	border-left: 2px solid var(--quaternary-color);
+	color: white;
+	background-color: black;
+}
+
+#newsletter__form button[type="submit"] {
+	height: 50px;
+	border: none;
+	padding: 0 20px;
+	font-size: var(--large-font-size);
+	font-family: helvetica, sans-serif;
+	color: black;
+	background-color: var(--quaternary-color);
+}
+
+.newsletter__undertext-container {
+	padding-top: 0.5rem;
+	margin: auto;
+	width: 60%;
+}
+
+.newsletter__undertext {
+	opacity: 0.3;
+	font-size: var(--small-fontsize);
+	color: var(--quaternary-color);
+}
+
+/* Desktop specific styiling */
 @media screen and (min-width: 1024px) {
 	.main-container__subscribe-banner:hover{
 		color: white;
@@ -75,17 +143,51 @@
 	.main-container__subscribe-banner:hover .main-container__subscribe-banner-close::after {
 		background-color: white;
 	}
+	
+	.subscribe__header-headline {
+		padding-top: 8rem
+	}
+
+	@media (prefers-color-scheme: light) {
+		#newsletter__form button[type="submit"]:hover {
+			background-color: var(--tertiary-color);
+		}
+		
+		#newsletter__form button[type="submit"]:hover ~ input[type="email"] {
+			border-top: 2px solid var(--tertiary-color);
+			border-bottom: 2px solid var(--tertiary-color);
+			border-left: 2px solid var(--tertiary-color);
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#newsletter__form button[type="submit"]:hover {
+			background-color: var(--tertiary-color);
+		}
+		
+		#newsletter__form button[type="submit"]:hover ~ input[type="email"] {
+			border-top: 2px solid var(--tertiary-color);
+			border-bottom: 2px solid var(--tertiary-color);
+			border-left: 2px solid var(--tertiary-color);
+		}
+	}
 }
 
 /* responsivity for mobile screens */
 @media screen and (max-width: 1024px) {
-	.main-container__subscribe-banner span {
+	.main-container__subscribe-banner span,
+	.subscribe__header-headline span,
+	.subscribe__header-paragraph span {
 		display: none;
 	}
 	
 	.main-container__subscribe-banner {
 		font-size: var(--large-font-size);
 		width: 95%;
+	}
+
+	.subscribe__header-headline {
+		padding-top: 8rem
 	}
 }
 
@@ -97,5 +199,51 @@
 	.main-container__subscribe-banner {
 		font-size: var(--large-font-size);
 		width: 95%;
+	}
+
+	#newsletter__form input[type="email"] {
+		font-size: 17px
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.newsletter__undertext-container {
+		display: none;
+	}
+	
+	.subscribe__header-headline {
+		margin-top: -8.2rem;
+	}
+
+	.subscribe__header-paragraph {
+		margin: -1rem 1rem 0.2rem 1rem;
+	}
+
+	#newsletter__form {
+		margin-bottom: 10px;
+	}
+
+	#newsletter__form input[type="email"] {
+		font-size: 17px
+	}
+}
+
+/* Light mode for newsletts__form and its children. Darkmdoe is default in stylesheet */
+@media (prefers-color-scheme: light) {
+	#newsletter__form input[type="email"] {
+		background-color: var(--secondary-color);
+		color: var(--primarycolor);
+		border-left: 2px solid var(--primary-color);
+		border-top: 2px solid var(--primary-color);
+		border-bottom: 2px solid var(--primary-color);
+	}
+	
+	#newsletter__form button[type="submit"] {
+		background-color: var(--primary-color);
+		color: var(--secondary-color);
+	}
+	
+	#newsletter__form button[type="submit"]:hover {
+		color: var(--secondary-color);
 	}
 }
