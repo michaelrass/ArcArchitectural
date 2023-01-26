@@ -147,6 +147,11 @@
 	font-weight: 400;
 }
 
+.mobile-container__logo-container {
+	width: 100%;
+	border: none;
+}
+
 .mobile-container__images-container{
 	width: 100%;
 	margin-bottom: 1rem;
