@@ -3,9 +3,11 @@ export default function Rederect() {
 	const clickableImages = document.querySelectorAll('.main-container__image-link');
 	const clickableImagesMobile = document.querySelectorAll('.mobile-container__images');
 
-	const clickableLogo = document.querySelector('.mobile-container__header-title');
+	const clickableLogoDesktop = document.querySelector('.aside-container__logo-button');
+	const clickableLogoMobile = document.querySelector('.mobile-container__logo-container');
 
-	clickableLogo.addEventListener('click', handleLogoButtomClick);
+	clickableLogoDesktop.addEventListener('click', handleLogoButtonClick);
+	clickableLogoMobile.addEventListener('click', handleLogoButtonClick);
 
 	clickableImages.forEach(element => {
 		element.addEventListener('click', handleImageClick);
@@ -20,7 +22,7 @@ export default function Rederect() {
 		navigateToPage();
 	}
 	
-	function handleLogoButtomClick() {
+	function handleLogoButtonClick() {
 		navigateToHome();
 	}
 
