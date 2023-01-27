@@ -1,8 +1,10 @@
 export default function Hover(){
 	let entered = ''
 
+	const hoverLogoDesktop = document.querySelector('.aside-container__logo-button');
 	const logoImageBlack = document.querySelector('.aside-img_black');
 	const logoImageWhite = document.querySelector('.aside-img_white');
+	const logoImagePurple = document.querySelector('.aside-img_purple');
 	const standardImage = document.querySelectorAll('.image__standard-image');
 	const hoverImage = document.querySelectorAll('.image__hover-image');
 	
@@ -14,60 +16,39 @@ export default function Hover(){
 			element.addEventListener('mouseout', handleMouseLeave);
 		})
 
-		if(logoImageBlack) {
-			logoImageBlack.addEventListener('mouseover', handleLogoImageBlackEnter);
-			logoImageBlack.addEventListener('mouseleave', handleLogoImageBlackLeave);
-		}
-	
-		if(logoImageWhite) {
-			logoImageWhite.addEventListener('mouseover', handleLogoImageWhiteEnter);
-			logoImageWhite.addEventListener('mouseleave' , handleLogoImageWhiteLeave);
-		}
+			logoImageBlack.addEventListener('mouseover', handleLogoImageEnter);
+			logoImageWhite.addEventListener('mouseover', handleLogoImageEnter);
+			logoImagePurple.addEventListener('mouseout', handleLogoImageLeave)
+		
+
+		console.log(logoImageBlack, logoImagePurple, logoImageWhite)
+
 	}
 
 
 
-	function handleLogoImageBlackEnter () {
-		toggleLogoColorBlackPurple('black');
-	}
-	function handleLogoImageBlackLeave (){
-		toggleLogoColorBlackPurple('black');
+	function handleLogoImageEnter () {
+		addImagePurpleHideBlackWhite();
 	}
 
-	function handleLogoImageWhiteEnter () {
-		toggleLogoColorWhitePurple('white');
-	}
-	function handleLogoImageWhiteLeave (){
-		toggleLogoColorWhitePurple('white');
+	function handleLogoImageLeave () {
+		removeImagePurpleShowBlackWhite();
 	}
 	
-	function toggleLogoColorBlackPurple(currentEntered) {
-		logoImageBlack.src = changeSource(currentEntered);
+	function addImagePurpleHideBlackWhite() {
+		logoImagePurple.classList.add('aside-img--show');
+		logoImageBlack.classList.add('aside-img--hidden');
+		logoImageWhite.classList.add('aside-img--hidden');
+
+
 	}
 
-	function toggleLogoColorWhitePurple(currentEntered) {
-		logoImageWhite.src = changeSource(currentEntered);
-	}
+	function removeImagePurpleShowBlackWhite() {
+		console.log('leave')
+		logoImageBlack.classList.remove('aside-img--hidden');
+		logoImageWhite.classList.remove('aside-img--hidden');
 
-	function changeSource(currentEntered) {
-
-		let sourcePurple = "/assets/images/logo/logoPurple.svg";
-		let sourceBlack = "/assets/images/logo/logoBlack.svg";
-		let sourceWhite = "/assets/images/logo/LogoWhite.svg";
-		let changeSource;
-
-		if(entered === 'white'){
-			changeSource = sourceWhite;
-			entered = '';
-		}else if(entered === 'black'){
-			changeSource = sourceBlack;
-			entered='';
-		}else {
-			changeSource = sourcePurple;
-			entered = currentEntered;
-		}
-
-		return changeSource;
+		logoImagePurple.classList.remove('aside-img--show');
 	}
 
 	function handleMouseEnter(event){
