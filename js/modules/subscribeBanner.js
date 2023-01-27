@@ -8,14 +8,17 @@ export default function subscribeBanner() {
 	// Session Storage
 	const bannerIsClosed = sessionStorage.getItem('subscribeBannerIsClosed');
 
-	if (bannerIsClosed) {
+	if (bannerIsClosed && subscribeBanner && subscribeBannerClose) {
 		hideBanner();
 		subscribeAsideToggle();
 	}
 	
 	// Event Listeners
-	subscribeBannerClose.addEventListener('click', handleBannerCloseClick);
-	subscribeBanner.addEventListener("animationend", handleBannerAnimation);
+	if(subscribeBanner && subscribeBannerClose) {
+		subscribeBannerClose.addEventListener('click', handleBannerCloseClick);
+		subscribeBanner.addEventListener("animationend", handleBannerAnimation);
+	}
+
 	window.addEventListener('resize', setWidth);
 	
 	// Handlers
@@ -47,5 +50,8 @@ export default function subscribeBanner() {
 		subscribeBanner.style.width = currentImageWidth.width;
 	}
 
-	setWidth();
+	if (subscribeBanner) {
+		setWidth();
+	}
+
 }
